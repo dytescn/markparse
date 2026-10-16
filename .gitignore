@@ -1,26 +1,26 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Rust
+/target
+**/*.rs.bk
+*.pdb
 
-node_modules
-dist
-dist-ssr
-*.local
+# Cargo.lock 是否提交按项目类型定：
+# - binary crate：提交
+# - library crate：不提交
+# 本项目是 library，忽略它
+Cargo.lock
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+# 构建产物
+*.so
+*.dylib
+*.dll
+*.a
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
 *.sw?
-package-lock.json
 
+# OS
+.DS_Store
+Thumbs.db

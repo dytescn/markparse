@@ -1,0 +1,13 @@
+{
+  "name": "markparse",
+  "version": "1.0.0",
+  "description": "markdown parse",
+  "keywords": ["markdown", "parse"],
+  "author": "funxdata",
+  "type": "sys",
+  "exports": {
+      "./target/release/libmarkparse.dll":"parse.dll",
+      "./target/release/libmarkparse.dylib":"parse.dylib",
+      "./target/release/libmarkparse.so":"parse.so"
+  }
+}

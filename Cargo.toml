@@ -1,0 +1,30 @@
+[package]
+name = "markparse"
+version = "0.1.0"
+edition = "2021"
+description = "Markdown parser exposed via C FFI"
+license = "MIT"
+repository = "https://github.com/dytescn/markparse"
+homepage = "https://github.com/dytescn/markparse"
+documentation = "https://docs.rs/markparse"
+readme = "README.md"
+keywords = ["markdown", "parser", "ffi", "mdast"]
+categories = ["parser-implementations", "api-bindings"]
+rust-version = "1.75"
+
+include = [
+    "src/**/*",
+    "tests/**/*",
+    "Cargo.toml",
+    "README.md",
+    "LICENSE",
+]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "markparse"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+markdown = { version = "1", features = ["serde"] }
