@@ -5,9 +5,15 @@
   "keywords": ["markdown", "parse"],
   "author": "funxdata",
   "type": "sys",
-  "exports": {
-      "./target/release/libmarkparse.dll":"parse.dll",
-      "./target/release/libmarkparse.dylib":"parse.dylib",
-      "./target/release/libmarkparse.so":"parse.so"
+  "platform-exports": {
+    "windows": {
+      "./target/release/markparse.dll": "parse.dll"
+    },
+    "linux": {
+      "./target/release/libmarkparse.so": "parse.so"
+    },
+    "macos": {
+      "./target/release/libmarkparse.dylib": "parse.dylib"
+    }
   }
 }

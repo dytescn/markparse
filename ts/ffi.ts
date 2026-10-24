@@ -1,4 +1,4 @@
-const BASE_URL = "http://127.0.0.1:44944/markparse";
+const BASE_URL = "http://127.0.0.1:44944/parse";
 
 /**
  * 调用 FFI 符号。
