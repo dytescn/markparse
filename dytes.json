@@ -1,5 +1,6 @@
 {
   "name": "markparse",
+  "uuid": "a087a560-a625-4e75-9909-46c987fc33a7",
   "version": "1.0.0",
   "description": "markdown parse",
   "keywords": ["markdown", "parse"],
